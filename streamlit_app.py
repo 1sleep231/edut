@@ -14,10 +14,10 @@ import numpy as np
 import plotly.express as px
 
 # Load saved model
-model = joblib.load(r"C:\Career\Dicoding\submission\rf_model.pkl")  # Sesuaikan dengan lokasi model Anda
+model = joblib.load("rf_model.pkl")  # Sesuaikan dengan lokasi model Anda
 
 # Load data
-data = pd.read_csv(r"C:\Career\Dicoding\submission\data.csv", sep=';')
+data = pd.read_csv("data.csv", sep=';')
 
 # Feature importance data for predictors
 feature_importance = pd.DataFrame({
